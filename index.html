@@ -6,21 +6,65 @@
     <title>Weather API</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
 <body>
     <div class="container">
         <div class="row justify-content-center align-items-center vh-100">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="weather-card mx-auto">
-                    <div class="location">New York, USA</div>
-                    <div class="weather-main">
-                      <div class="temp">22°C</div>
-                      <div class="condition">Partly Cloudy</div>
+                  <div class="card">
+                    <div class="card-header">
+                      Weather App
                     </div>
-                    <div class="weather-details">
-                      <div class="humidity">Humidity: <span>65%</span></div>
-                      <div class="wind">Wind: <span>12 km/h</span></div>
-                      <div class="feel">Feels Like: <span>21°C</span></div>
+                    <div class="card-body text-center">
+                      <input type="text" id="inputData" class="mb-2 w-100 px-3 py-3" placeholder="Enter your city">
+                      <a href="#" class="btn btn-primary border border-1 rounded" id="search">Search</a>
+                    </div>
+                  </div>
+                  </div>
+
+                  <!-- card-2 -->
+                  <div class="weather-data mx-auto active">
+                    <div class="card">  
+                      <div class="card-header">
+                        <a href="#">
+                          <i class="bi bi-arrow-left-short"></i>
+                        </a> Weather App
+                      </div>
+                      <div class="card-body text-center">
+                       <img src="./image/clear.svg" alt="" id="weather-img" class="mb-2">
+                       <div class="temp">
+                          <span class="temperature">13°</span>
+                          C
+                       </div>
+                       <div class="weather mt-1">Broken Cloud</div>
+                       <div class="location mt-1">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>Navsari, Gujarat</span>
+                       </div>
+                      </div>
+                      <div class="card-footer text-body-secondary">
+                        <div class="feel-like w-100 p-2 border-end border-3">
+                          <i class="bi bi-thermometer-sun"></i>
+                          <div class="detail ms-2">
+                            <div class="temp-1">
+                              <span class="feel-temp">13</span>
+                              <span>°</span>C                         
+                           </div>
+                           <p class="mb-0">Feels like</p>
+                          </div>
+                        </div>
+                        <div class="humidity w-100 p-2">
+                          <i class="bi bi-droplet-half"></i>
+                          <div class="detail ms-2">
+                            <div class="temp-1">
+                              <span class="humidity-percentage">84%</span>
+                           </div>
+                           <p class="mb-0">Humidity</p>
+                          </div> 
+                        </div>
+                      </div>
                     </div>
                   </div>
             </div>

@@ -4,45 +4,85 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #74ebd5, #ACB6E5);
-  }
+body{
+  background:linear-gradient(#654ea3,#eaafc8);
+}
   
-  .weather-card {
+.weather-card .card{
     background: #ffffff;
-    padding: 30px 40px;
-    border-radius: 20px;
+    border-radius: 4px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    width: 280px;
-  }
+}
   
-  .location {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
-  
-  .weather-main .temp {
-    font-size: 48px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .weather-main .condition {
-    font-size: 18px;
-    color: #666;
-    margin-top: 5px;
-  }
-  
-  .weather-details {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #444;
-  }
-  
-  .weather-details div {
-    margin: 5px 0;
-  }
-  
+.card-header{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgba(0, 123, 255, 0.993) !important;
+}
+.weather-data{
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.weather-data .card-header a{
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: rgba(0, 123, 255, 0.993);
+}
+
+.temp{
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+
+.weather{
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.location{
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.card-footer{
+  display: flex;
+}
+
+.feel-like i{
+  font-size: 2.2rem;
+  color:rgba(0, 123, 255, 0.993) ;
+}
+
+.feel-like{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: black;
+}
+
+.humidity{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: black;
+}
+
+.humidity i{
+  font-size: 2.2rem;
+  color:rgba(0, 123, 255, 0.993) ;
+}
+
+.card-body img{
+  width: 6vw;
+}
+
+.active{
+  display: none;
+}
