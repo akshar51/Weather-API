@@ -68,7 +68,7 @@ Handles user interaction, API fetch, data processing, and dynamic UI updates.
 
 #### 1. **Set up Variables**
 ```js
-const apiKey = 'YOUR_API_KEY';
+const apiKey = '67ac3361a81823463669ff6f146ab856';
 ```
 
 #### 2. **On Search Button Click:**
